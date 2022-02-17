@@ -1,0 +1,703 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+/* scrollbar Hidden */
+html {
+  overflow:   scroll;
+  overflow-x: hidden;
+}
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent; /* make scrollbar transparent */
+}
+/* ---------------------------------------------------------------------------------------------------------------------------------------------- */
+
+/* landing section styling */
+#landing {
+  /* background-color: #E8EAE6; */
+  background-color: #fff;
+}
+
+.contact-icons {
+  position: fixed;
+  top: 33%;
+  left: 2%;
+  display: grid;
+  /* grid-template-columns:repeat (3, 100px); */
+  grid-template-rows: (3, 1fr);
+  grid-gap: 3em;
+  z-index: 30;
+  width: 100px;
+}
+
+.contact-icons img {
+  width: 40%;
+  transition: 0.2s;
+}
+
+.contact-icons img:hover {
+  width: 60%;
+  filter: invert(27%) sepia(59%) saturate(2117%) hue-rotate(97deg) brightness(97%) contrast(104%);
+  /* padding-bottom: 5px; */
+}
+
+.logo {
+  position: absolute;
+  width: 125px;
+  height: auto;
+  z-index: 20;
+  top: 15px;
+  left: 50px;
+}
+
+
+.rhs{
+  position: absolute;
+top: 78px;
+left: 50px;
+z-index: 10;
+}
+
+.floating-items {
+  object-fit: cover;
+}
+
+.parent p {
+  font-size: 4rem;
+  font-family: 'Teko', sans-serif;
+}
+
+.parent h1 {
+  color: rgba(255, 255, 255, 0);
+}
+
+.ffcc {
+  white-space: nowrap;
+}
+
+.landing-bg {
+  background-color:rgba(255, 255, 255, 0.3);
+  /* background-color:rgba(0, 0, 0, 0.3); */
+  height: 100%;
+  width: 100%;
+  /* border-radius: 50px; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.color-img{
+  background-color:rgba(0, 0, 0, 0.3);
+  /* background-color:rgba(255, 255, 255, 0.3); */
+  /* background-color:rgba(0, 0, 0, 0.3); */
+  height: 100%;
+  width: 100%;
+  /* border-radius: 50px; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.details {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  z-index: 100;
+  /* width: 30%; */
+  top: 0;
+  left: 0;
+}
+
+.details h1 {
+  /* font-family: 'Crimson Text', serif; */
+  font-family: 'Cinzel', serif;
+  font-size: 6.5rem;
+  /* color: #557174; */
+    color: #9DAD7F;
+  /* position: absolute;
+  top: 200px;
+  right: 325px; */
+}
+
+.details h2 {
+  /* font-family: 'Teko', sans-serif; */
+  font-family: 'Fira Sans Condensed', sans-serif;
+  font-size: 5.5rem;
+  /* position: absolute;
+  top: 335px;
+  right: 450px; */
+  color: #557174;
+  /* color: #9DAD7F; */
+  /* color: white; */
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+}
+
+.details p {
+  font-family: 'Teko', sans-serif;
+  font-size: 2rem;
+  /* position: absolute; */
+  /* top: 450px; */
+  /* right: 450px; */
+}
+
+p.thirdslide-p{
+  color: white;
+}
+
+.parent {
+  /* display: grid; */
+  width: 100vw;
+  height: 100vh;
+  /* grid-template-columns: repeat(8, 12.5%);
+  grid-template-rows: repeat(6, 16.66%);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px; */
+}
+
+.carousel-item {
+  height: 100vh;
+  width: 100vw;
+}
+
+.car-img {
+  width: 100%;
+  height: auto;
+}
+
+.carousel-fade .carousel-item {
+  opacity: 0;
+  transition-duration: 1s;
+  transition-property: opacity;
+}
+
+.carousel-fade .carousel-item.active,
+.carousel-fade .carousel-item-next.carousel-item-left,
+.carousel-fade .carousel-item-prev.carousel-item-right {
+  opacity: 1;
+}
+
+.carousel-fade .active.carousel-item-left,
+.carousel-fade .active.carousel-item-right {
+  opacity: 0;
+}
+
+#products h1, #brands h1, #about-us h1 {
+  margin: 30px 0;
+  font-family: 'Teko', sans-serif;
+  font-size: 3.5rem;
+  color: green;
+}
+/* ---------------------------------------------------------------------------------------------------------------------------------------------- */
+/* about us syling */
+#about-us {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5% 0;
+}
+
+.cntr {
+  width: 85%;
+  display: grid;
+  grid-column-gap: 5%;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+  align-items: center;
+}
+
+.about-us-img img {
+  width: 100%;
+}
+/* ---------------------------------------------------------------------------------------------------------------------------------------------- */
+/* Products Section Styling */
+#products {
+  background-color: #E8EAE6;
+  padding: 50px 0 245px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-div {
+  width: 80%;
+}
+
+
+.container2 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-row-gap: 2%;
+  grid-template-rows: repeat(5,1fr);
+  justify-items: center;
+  align-items: center;
+}
+
+.pr-win {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 5%
+  margin-bottom: 10px;
+  justify-content: center;
+  transition: transform .2s;
+  padding: 5%;
+  width: 75%;
+}
+
+.pr-win img {
+  width: 185px;
+  border-radius: 15px;
+  padding: 3px;
+  border: solid 1.5px #7C9473;
+}
+
+.pr-win p {
+  margin: 6px 0;
+  font-size: 1.5rem;
+  color: #7C9473;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h2.paragraphy{
+  font-size: 1.4rem;
+}
+
+/* .pr-win:hover, .pr-win p:hover {
+  color: green;
+  cursor: pointer;
+  transform: scale(1.2);
+  transition: 0.2s;
+} */
+
+
+/* ---------------------------------------------------------------------------------------------------------------------------------------------- */
+/* brands secion syling */
+#brands {
+  padding: 50px 0;
+  text-align: center;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    ". . . ."
+    ". . . ."
+    ". gg gg .";
+  align-items: center;
+  justify-items: center;
+  z-index: 10;
+}
+
+.gg {
+  grid-area: gg;
+}
+
+.brnd {
+  width: 50%;
+}
+
+.brnd1 {
+  width: 70%;
+}
+/* ---------------------------------------------------------------------------------------------------------------------------------------------- */
+/* info and map section */
+#info-section {
+  background-color: #E8EAE6;
+  height: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 2%;
+}
+
+#info-section h1 {
+  padding: 5px;
+  font-family: 'Teko', sans-serif;
+  color: green;
+  font-size: 3rem;
+}
+
+.info a {
+  text-decoration: none;
+  color: black;
+  margin-bottom: 5px;
+}
+
+.info a:hover {
+  color: green;
+}
+
+.icon-boxes {
+  display: flex;
+  align-items: flex-start;
+}
+
+.info-txt {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-bottom: 10px;
+}
+
+#info-section img {
+  width: 35px;
+  margin: 0 20px 20px 20px;
+}
+
+.mobile-map{
+  display: none;
+}
+/* ---------------------------------------------------------------------------------------------------------------------------------------------- */
+/* footer styling */
+#footer {
+  background-color: #7C9473;
+  text-align: center;
+  padding: 10px 0;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+}
+/* ---------------------------------------------------------------------------------------------------------------------------------------------- */
+/* form styling */
+#form-sec {
+
+  padding: 80px 0;
+}
+
+#form-sec h1 {
+  padding: 5px;
+  font-family: 'Teko', sans-serif;
+  color: green;
+  font-size: 3rem;
+  margin-left: 9%;;
+}
+
+#form-sec input {
+  border-width: thin;
+}
+
+#form-sec label {
+  color: black;
+  font-weight: bold;
+}
+
+input{
+  background-color: #E8EAE6;
+}
+
+ textarea {
+   background-color: #E8EAE6;
+   overflow: auto;
+   resize: none;
+ }
+
+.form-main {
+  display: flex;
+  justify-content: space-around;
+}
+
+.form-3-n {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.x {
+  display: flex;
+  flex-direction: column;
+  margin: 5% 0;
+}
+
+.x-n {
+  display: flex;
+  flex-direction: column;
+}
+
+.button{
+  display:flex;
+  justify-content: flex-end;
+}
+
+.submit-btn {
+  text-transform: uppercase;
+  color: green;
+
+  letter-spacing: 2px;
+  margin-top: 20px;
+
+  width: 130px;
+  height: 50px;
+  font-family: 'Teko', sans-serif;
+  font-size: 1.8rem;
+  border-color: green;
+  background-color: white;
+  cursor: pointer;
+}
+
+.submit-btn:hover {
+  background-color: #7C9473;
+  color: white;
+}
+
+input:focus::placeholder,
+textarea:focus::placeholder {
+  color: transparent;
+}
+
+/* ---------------------------------------------------------------------------------------------------------------------------------------- */
+/* AC PRODUCT PAGE STYLING*/
+  .ac-item-images{
+    display: grid;
+    grid-template-columns: repeat(3, 35%);
+    grid-template-rows: repeat(3, 1fr);
+    margin-left: 6%;
+    grid-row-gap: 2%;
+  }
+
+  /* ---------------------------------------------------------------------------------------------------------------------------------------- */
+
+  /* Adhesive Items page */
+
+  .ad-item-images {
+    display: grid;
+    grid-template-columns: repeat(3, 35%);
+    grid-template-rows: repeat(3, 1fr);
+    margin-left: 6%;
+    grid-row-gap: 2%;
+  }
+
+/* ---------------------------------------------------------------------------------------------------------------------------------------- */
+/* Agricultural PRODUCT PAGE STYLING */
+.agri-item-images {
+  display: grid;
+  grid-template-columns: repeat(3, 35%);
+  grid-template-rows: repeat(2, 1fr);
+  margin-left: 6%;
+  grid-row-gap: 2%;
+}
+
+/* ---------------------------------------------------------------------------------------------------------------------------------------- */
+/*BEARING PRODUCT PAGE STYLING */
+.Bear-item-images {
+  display: grid;
+  grid-template-columns: repeat(3, 35%);
+  grid-template-rows: repeat(1, 1fr);
+  margin-left: 6%;
+  grid-row-gap: 2%;
+}
+
+/* ---------------------------------------------------------------------------------------------------------------------------------------- */
+/*FASTNERNS PRODUCT PAGE STYLING */
+.F-item-images {
+  display: grid;
+  grid-template-columns: repeat(3, 35%);
+  grid-template-rows: repeat(5, 1fr);
+  margin-left: 6%;
+  grid-row-gap: 2%;
+}
+
+/* ---------------------------------------------------------------------------------------------------------------------------------------- */
+/*GREASE & OIL PRODUCT PAGE STYLING */
+.greoil-item-images {
+  display: grid;
+  grid-template-columns: repeat(3, 35%);
+  grid-template-rows: repeat(2, 1fr);
+  margin-left: 6%;
+  grid-row-gap: 2%;
+}
+
+/* ---------------------------------------------------------------------------------------------------------------------------------------- */
+
+/* HARDWAR PAGE STYLING */
+.hard-item-images{
+  display: grid;
+  grid-template-columns: repeat(3, 35%);
+  grid-template-rows: repeat(2, 1fr);
+  margin-left: 6%;
+  grid-row-gap: 2%;
+}
+
+
+/* ---------------------------------------------------------------------------------------------------------------------------------------- */
+/* HOSES PAGE STYLING */
+.hoses-item-images {
+  display: grid;
+  grid-template-columns: repeat(3, 35%);
+  grid-template-rows: repeat(3, 1fr);
+  margin-left: 6%;
+  grid-row-gap: 2%;
+}
+
+/* ---------------------------------------------------------------------------------------------------------------------------------------- */
+/* PAINT PAGE STYLING */
+
+.paint-item-images{
+  display: grid;
+  grid-template-columns: repeat(3, 35%);
+  grid-template-rows: repeat(2, 1fr);
+  margin-left: 6%;
+  grid-row-gap: 2%;
+}
+}
+
+/* ---------------------------------------------------------------------------------------------------------------------------------------- */
+/* PIPES & FITTINGS PAGE STYLING */
+.pf-item-images {
+  display: grid;
+  grid-template-columns: repeat(3, 35%);
+  grid-template-rows: repeat(5, 1fr);
+  margin-left: 6%;
+  grid-row-gap: 2%;
+}
+
+
+
+/* ---------------------------------------------------------------------------------------------------------------------------------------- */
+/* POWERTOOLS PRODUC PAGE STYLING  */
+
+.powertools-item-images{
+  display: grid;
+  grid-template-columns: repeat(3, 35%);
+  grid-template-rows: repeat(4, 1fr);
+  margin-left: 6%;
+  grid-row-gap: 2%;
+}
+
+/* ---------------------------------------------------------------------------------------------------------------------------------------- */
+/* Pnuematic PRODUCT PAGE STYLING */
+.pnue-item-images {
+  display: grid;
+  grid-template-columns: repeat(3, 35%);
+  grid-template-rows: repeat(2, 1fr);
+  margin-left: 6%;
+  grid-row-gap: 2%;
+}
+/* ---------------------------------------------------------------------------------------------------------------------------------------- */
+
+.rubber-item-images{
+  display: grid;
+  grid-template-columns: repeat(3, 35%);
+  grid-template-rows: repeat(1, 1fr);
+  margin-left: 6%;
+  grid-row-gap: 2%;
+}
+
+/* ---------------------------------------------------------------------------------------------------------------------------------------- */
+/*SAFETY PRODUCT PAGE STYLING */
+
+.back-btn{
+  display: none;
+}
+.product-landing {
+  background-color: #7C9473;
+  position: relative;
+  top: 0;
+  height: 20vh;
+  margin: 0;
+}
+
+.product-landing h1 {
+  margin: 0;
+  /* position: absolute;
+  left: 500px; */
+  font-size: 7rem;
+  font-family: 'Teko', sans-serif;
+  color: #fff;
+  font-weight: lighter;
+  text-align: center;
+}
+
+.product-landing span {
+  position: absolute;
+  top: 80px;
+  left: 50px;
+}
+
+#display-image {
+  background-color: #fff;
+}
+
+.display-txt {
+  text-align: center;
+  font-size: 3rem;
+}
+
+.display-txt h3 {
+  margin: 50px 0;
+  color: green;
+  text-decoration: underline;
+}
+
+.gridnodiv {
+  text-align: center;
+}
+
+.item-images {
+  display: grid;
+  grid-template-columns: repeat(3, 35%);
+  grid-template-rows: repeat(4, 1fr);
+  margin-left: 6%;
+  grid-row-gap: 2%;
+}
+
+.cool {
+  height: 70%;
+  width: 65%;
+  border: 1px solid black;
+  text-align: center;
+  margin-bottom: 50px;
+  background-color: rgba(232, 234, 230, .3);
+  box-shadow: 4px 4px 5px 0px rgba(50, 50, 50, 0.75);
+}
+
+.cool:hover {
+  animation: bounce 1s linear;
+  cursor: pointer;
+  box-shadow: 6px 6px 5px 0px rgba(50, 50, 50, 0.75);
+}
+
+
+/* ---------------------------------------------------------------------------------------------------------------------------------------- */
+
+/* Sanitary Items page */
+
+.San-item-images {
+  display: grid;
+  grid-template-columns: repeat(3, 35%);
+  grid-template-rows: repeat(3, 1fr);
+  margin-left: 6%;
+  grid-row-gap: 2%;
+}
+
+/* ---------------------------------------------------------------------------------------------------------------------------------------- */
+
+/* Welding Items page */
+
+#weld-display-image {
+  background-color: #fff;
+}
+
+.weld-item-images {
+  display: grid;
+  grid-template-columns: repeat(3, 35%);
+  grid-template-rows: repeat(4, 1fr);
+  margin-left: 6%;
+  grid-row-gap: 2%;
+}
+
+
+/* ---------------------------------------------------------------------------------------------------------------------------------------- */
